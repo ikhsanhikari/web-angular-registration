@@ -1,0 +1,21 @@
+<div class="container">
+  <h3>Login</h3>
+  <form [formGroup]="loginFormGroup">
+      <div class="row">
+          <div class="col-md-4">
+              <div class="form-group">
+                  <input type="text"  placeholder="Username" formControlName="username" class="form-control" id="username">
+              </div>
+              <div class="form-group">
+                  <input type="password" (focus)="clearPass()" placeholder="Password" formControlName="password" class="form-control" id="password">
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <button type="button" (click)="save()" style="width: 100%; background-color: purple; color: white" class="btn ">Login</button>
+                  </div>
+              </div><br>
+          </div>
+        </div>
+  </form>
+</div>
+<br><br>
